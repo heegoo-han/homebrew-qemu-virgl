@@ -52,13 +52,13 @@ class QemuVirgl < Formula
       --enable-libssh
       --enable-vde
       --extra-cflags=-DNCURSES_WIDECHAR=1
-      --extra-cflags=-I#{Formula["libangle"].opt_prefix}/include
-      --extra-cflags=-I#{Formula["libepoxy-angle"].opt_prefix}/include
-      --extra-cflags=-I#{Formula["virglrenderer"].opt_prefix}/include
+      --extra-cflags=-I#{Formula["heegoo-han/qemu-virgl/libangle"].opt_prefix}/include
+      --extra-cflags=-I#{Formula["heegoo-han/qemu-virgl/libepoxy-angle"].opt_prefix}/include
+      --extra-cflags=-I#{Formula["heegoo-han/qemu-virgl/virglrenderer"].opt_prefix}/include
       --extra-cflags=-I#{Formula["spice-protocol"].opt_prefix}/include/spice-1
-      --extra-ldflags=-L#{Formula["libangle"].opt_prefix}/lib
-      --extra-ldflags=-L#{Formula["libepoxy-angle"].opt_prefix}/lib
-      --extra-ldflags=-L#{Formula["virglrenderer"].opt_prefix}/lib
+      --extra-ldflags=-L#{Formula["heegoo-han/qemu-virgl/libangle"].opt_prefix}/lib
+      --extra-ldflags=-L#{Formula["heegoo-han/qemu-virgl/libepoxy-angle"].opt_prefix}/lib
+      --extra-ldflags=-L#{Formula["heegoo-han/qemu-virgl/virglrenderer"].opt_prefix}/lib
       --extra-ldflags=-L#{Formula["spice-protocol"].opt_prefix}/lib
       --disable-sdl
       --disable-gtk
